@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4e1d2; 
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.wrapper {
+  width: 350px;
+  padding: 20px;
+  background: #fff; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+.field label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.field input:focus + label,
+.field input:valid + label {
+  top: 0;
+  left: 5px;
+  font-size: 12px;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  margin-right: 5px;
+}
+
+.pass-link a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.pass-link a:hover {
+  text-decoration: underline;
+}
+
+.field input[type="submit"] {
+  background: #ffb6c1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.field input[type="submit"]:hover {
+  background: #ff9ca8;
+}
+
+.signup-link {
+  text-align: center;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #ff7f9f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

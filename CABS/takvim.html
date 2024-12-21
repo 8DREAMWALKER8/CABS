@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takvim ve Saat Seçimi</title>
+    
+    <!-- FullCalendar CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.3.1/fullcalendar.min.css" rel="stylesheet">
+    
+    <!-- Timepicker CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.1/jquery.timepicker.min.css" rel="stylesheet">
+    
+    <!-- Kendi CSS dosyamız -->
+    <link rel="stylesheet" href="styletakvim.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Takvim ve Saat Seçimi</h1>
+        
+        <!-- Takvim -->
+        <div id="calendar"></div>
+
+        <!-- Saat Seçimi -->
+        <div id="timepicker-container">
+            <label for="timepicker">Saat Seçin:</label>
+            <input id="timepicker" type="text" />
+        </div>
+
+        <!-- Seçilen Tarih ve Saat -->
+        <div id="selected-datetime">
+            <p><strong>Seçilen Tarih ve Saat:</strong></p>
+            <p id="datetime"></p>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Moment.js (FullCalendar için) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.3.1/fullcalendar.min.js"></script>
+
+    <!-- jQuery Timepicker JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.1/jquery.timepicker.min.js"></script>
+
+    <!-- Kendi JS dosyamız -->
+    <script src="takvimkod.js"></script>
+</body>
+</html>

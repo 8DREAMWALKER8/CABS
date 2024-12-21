@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+#calendar {
+  margin-top: 30px;
+}
+
+#timepicker-container {
+  margin-top: 20px;
+}
+
+#selected-datetime {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#selected-datetime p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

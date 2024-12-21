@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Etkinlik Sayfası</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <header>
+        <h1>Etkinliğin ne olacak?</h1>
+    </header>
+
+    <main>
+        <section class="options-container">
+           <div class="option-box" data-name="Etkinlik 1">
+                 <img src="top.png" alt="Etkinlik 1">
+                  </div>
+            <div class="option-box" data-name="Etkinlik 2">
+                <img src="evlen.png" alt="Etkinlik 2">
+                
+            </div>
+            <div class="option-box" data-name="Etkinlik 3">
+                 <img src="toplantı.png" alt="Etkinlik 3"> 
+                
+            </div>
+            <div class="option-box" data-name="Etkinlik 4">
+                <img src="date.png" alt="Etkinlik 4"> 
+                
+            </div>
+            <div class="option-box" data-name="Etkinlik 5">
+                 <img src="film.png" alt="Etkinlik 5"> 
+            </div>
+            <div class="option-box" data-name="Etkinlik 6">
+                 <img src="seyehat.png" alt="Etkinlik 6">
+            </div>
+            <div class="option-box" data-name="Etkinlik 7">
+                 <img src="konser.png" alt="Etkinlik 7">
+            </div>
+            <div class="option-box" data-name="Etkinlik 8">
+                <img src="oyun.png" alt="Etkinlik 8">
+            </div>
+        </section>
+
+        <section class="calendar-section hidden">
+            <h2>Tarih Seçimi</h2>
+            <p>Lütfen etkinlik tarih aralıklarını seçin:</p>
+            <label>Başlangıç Tarihi: <input type="date" id="startDate"></label>
+            <label>Bitiş Tarihi: <input type="date" id="endDate"></label>
+            <button id="generateLinkBtn">Link Oluştur</button>
+        </section>
+
+        <section class="link-section hidden">
+            <h2>Etkinlik Bağlantısı</h2>
+            <p id="generatedLink"></p>
+            <button id="copyLinkBtn">Linki Kopyala</button>
+        </section>
+    </main>
+
+    <script src="script2.js"></script>
+</body>
+</html>

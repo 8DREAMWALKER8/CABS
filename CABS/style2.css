@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #f5e8da;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #ce8ca5;
+    margin: 0;
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.option-box {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px 20px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-box:hover {
+    background-color: #ff7f9f;
+    color: #fff;
+}
+
+.option-box img {
+    max-width: 100px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.option-box span {
+    display: block;
+    margin-top: 5px;
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+.calendar-section,
+.link-section {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.calendar-section h2,
+.link-section h2 {
+    margin-top: 0;
+    color: #ce8ca5;
+}
+
+.calendar-section p,
+.link-section p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.calendar-section label,
+.link-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.calendar-section input[type="date"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #ce8ca5;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff7f9f;
+}
+
+.hidden {
+    display: none;
+}

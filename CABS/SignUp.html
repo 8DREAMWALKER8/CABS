@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Kayıt Olma</title>
+    <link rel="stylesheet" href="stylecabs.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Kayıt Olma</div>
+      <div class="content">
+        <form action="#" onsubmit="return validateForm()">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Adınız</span>
+              <input type="text" placeholder="İsminizi giriniz..." maxlength="40" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Soyadınız</span>
+              <input type="text" placeholder="Soyadınızı giriniz..." maxlength="30" required>
+            </div>
+            <div class="input-box">
+              <span class="details">E-posta</span>
+              <input type="email" placeholder="E-posta adresinizi giriniz..." maxlength="50" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Telefon</span>
+              <input type="text" placeholder="Telefon numaranızı giriniz..." maxlength="10" minlength="10" pattern="\d{10}" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Doğum Tarihi</span>
+              <input type="date" id="dob" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Şifre</span>
+              <input type="password" id="password" placeholder="Şifrenizi giriniz..." maxlength="16" minlength="8" required>
+            </div>
+            <div class="input-box">
+              <span class="details">Şifre Onayla</span>
+              <input type="password" id="confirm_password" placeholder="Şifrenizi tekrar giriniz..." maxlength="16" minlength="8" required>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Kayıt Ol">
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

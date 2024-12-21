@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CABS-Etkinliği CABS'la</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="cabslogo.png" alt="CABS Logo">
+        </div>
+        <div class="main">
+            <ul>
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#about">Biz Kimiz?</a></li>
+                <li><a href="#cabs">CABS Nedir?</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <a href="login.html">Giriş Yap</a>
+        </div>
+    </header>
+    
+    <section id="home" class="fade-in-on-scroll">
+        <h1 class="main-slogan">Etkinliği CABS'la!</h1>
+        <div class="steps-container">
+            <div class="step-box">
+                <div class="step-number">1</div>
+                <p class="step-desc">Arkadaşlarınla yapmak istediğin etkinliği belirle</p>
+            </div>
+            <div class="step-box">
+                <div class="step-number">2</div>
+                <p class="step-desc">Mail ya da mesaj aracılığıyla arkadaşlarına CABS linkini at</p>
+            </div>
+            <div class="step-box">
+                <div class="step-number">3</div>
+                <p class="step-desc">Arkadaşların tarih ve saat seçsin, en uygun olan vakit belirlensin</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="fade-in-on-scroll">
+        <h1>Biz Kimiz?</h1>
+        <p>CABS, ekip üyelerinin baş harflerinin birleşimidir :) 4 tane yazılım mühendisliği öğrencisinden oluşur. Yasemin Karagül'ün proje ödevi için bir araya gelmişlerdir.</p>
+        <div class="team-container">
+            <div class="team-member">
+                <h2>Serra Özbey</h2>
+                <a href="https://www.linkedin.com/in/serra-%C3%B6zbey-178742258/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="team-member">
+                <h2>Cenker Tüzün</h2>
+                <a href="" target="_blank">LinkedIn</a>
+            </div>
+            <div class="team-member">
+                <h2>Aleyna Parkaz</h2>
+                <a href="https://www.linkedin.com/in/aleyna-parkaz/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="team-member">
+                <h2>Beyza Uslu</h2>
+                <a href="https://www.linkedin.com/in/beyzausluu/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cabs" class="fade-in-on-scroll">
+        <h1>CABS Nedir?</h1>
+        <div class="cabs-content">
+            <div class="cabs-text">
+                <p>
+                    CABS, Etkinliğinizi ayarlamanızda size yardımcı olur. Katılımcıları belirlenen etkinliğin takvimine yönlendirerek, katılımcılara tarih ve saat için oy verme şansı tanır. Oy sonuçlarına göre etkinlik zamanı kesinleştirilir. Etkinliğin konumu ve zamanı oy kullanmış olanlara mail ya da sms aracılığıyla gönderilir. Etkinliği CABS'lamak bu kadar basit!
+                </p>
+            </div>
+            <div class="cabs-image">
+                <img src="cabs.png" alt="CABS Görseli">
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="fade-in-on-scroll">
+        <h1>İletişim</h1>
+        <div class="contact-container">
+            <div class="contact-image">
+                <img src="iletişim.png" alt="İletişim">
+            </div>
+            <div class="contact-form">
+                <p>Bize ulaşmak için aşağıdaki formu doldurabilirsiniz</p>
+                <form>
+                    <label for="name">İsim Soyisim:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-posta:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="message">Mesajınız:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
