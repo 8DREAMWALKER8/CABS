@@ -1,3 +1,11 @@
+/* Renk Paleti
+   - #326789 (Ana koyu mavi ton)
+   - #78A6C8 (Açık mavi ton)
+   - #e9eef2 (Açık gri / neredeyse beyaz ton)
+   - #e65c4f (Kırmızımsı turuncu)
+   - #99ccff (Açık mavi paragraf rengi)
+*/
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
@@ -7,11 +15,17 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    /* Genel arka planı çok açık bir tona ayarlayarak ferahlık sağlıyoruz */
+    background-color: #e9eef2; 
+    /* Ana metin rengi olarak koyu mavi */
+    color: #326789;
 }
 
+/* Header (üst menü çubuğu) */
 header {
-    background-color: #ce8ca5; 
-    color: #fff;
+    /* Header için açık renk */
+    background-color: #e9eef2; 
+    color: #326789;
     padding: 15px 30px;
     position: sticky;
     top: 0;
@@ -19,31 +33,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* Hafif bir gölge ekleyerek katman hissi veriyoruz */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.start-button {
-    background-color: #ff7f9f; 
-    border: none;
-    color: white;              
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 8px;      
-    transition: background-color 0.3s ease; 
-}
 
-.start-button:hover {
-    background-color: #ff7f9f; 
-}
-
-.start-button:active {
-    background-color: #ff7f9f; 
-}
-
+/* Logo boyutu (isteğe göre değiştirebilirsiniz) */
 .logo img {
     height: 80px; 
 }
 
+/* Navigation */
 .main ul {
     list-style: none;
     margin: 0;
@@ -56,7 +55,8 @@ header {
 }
 
 .main ul li a {
-    color: white;
+    /* Menüdeki bağlantılar */
+    color: #326789;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -66,8 +66,9 @@ header {
     text-decoration: underline;
 }
 
+/* Giriş (Login) Linki */
 .login a {
-    color: white;
+    color: #326789;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -77,6 +78,27 @@ header {
     text-decoration: underline;
 }
 
+/* Başlat / Giriş Butonları */
+.start-button {
+    background-color: #e65c4f; 
+    border: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #c24b42;
+}
+
+.start-button:active {
+    background-color: #e65c4f; 
+}
+
+/* Bölüm Yapısı */
 section {
     padding: 50px;
     display: flex;
@@ -84,36 +106,46 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #333;
     min-height: 100vh;
 }
 
+/* Arkaplanı farklı bölümler için isteğe göre değiştirebilirsiniz */
 #home {
-    background-color: #f5e8da; 
+    background-color: #e65c4f; 
 }
 
 #about {
-    background-color: #f5e8da; 
+    background-color: #e9eef2;
 }
 
 #cabs {
-    background-color: #f5e8da; 
+    background-color: #e65c4f;
 }
 
 #contact {
-    background-color: #f5e8da
+    background-color: #e9eef2;
 }
 
+/* Başlıklar */
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #326789;
 }
 
+/* 
+   Paragraflar: rengi tam beyaz yerine artık açık mavi (#99ccff)
+   isterseniz #b3d9ff, #cceeff gibi başka tonlar da kullanabilirsiniz
+*/
 p {
     font-size: 20px;
     line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #99ccff; /* Değişiklik yapılan satır */
 }
 
+/* Scroll ile görünürken yavaşça belirme animasyonu */
 .fade-in-on-scroll {
     opacity: 0;
     transform: translateY(20px);
@@ -125,18 +157,21 @@ p {
     transform: translateY(0);
 }
 
+/* Ana slogan */
 .main-slogan {
     font-size: 60px;
     font-weight: bold;
-    color: #ff7f9f;
+    color: #e9eef2;
     margin-bottom: 40px;
-    text-shadow: 2px 2px #fff;
+    /* Metin gölgesini siyah (#000000) olarak ayarladık */
+    text-shadow: 1px 1px #000000; 
 }
 
+/* Adım kutuları (Steps) */
 .steps-container {
     display: flex;
     justify-content: center;
-    background: #ffffff;
+    background: #78A6C8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     max-width: 800px;
@@ -151,8 +186,9 @@ p {
     transition: transform 0.3s ease;
     padding: 20px;
     border-radius: 8px;
-    background: #fafafa;
+    background: #e9eef2;
     position: relative;
+    margin: 10px;
 }
 
 .step-box:hover {
@@ -162,19 +198,16 @@ p {
 .step-number {
     font-size: 48px;
     font-weight: bold;
-    color: #ff7f9f;
+    color: #326789;
     margin-bottom: 10px;
 }
 
 .step-desc {
     font-size: 16px;
-    color: #555;
+    color: #555555;
 }
 
-.step-box:not(:last-child) {
-    border-right: 1px solid #ccc;
-}
-
+/* Takım (Team) */
 .team-container {
     display: flex;
     flex-wrap: wrap;
@@ -184,7 +217,7 @@ p {
 }
 
 .team-member {
-    background: #fff;
+    background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -195,14 +228,14 @@ p {
 .team-member h2 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #333;
+    color: #78A6C8;
 }
 
 .team-member a {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
-    color: #ff7f9f;
+    color: #326789; 
     font-weight: bold;
 }
 
@@ -210,19 +243,22 @@ p {
     text-decoration: underline;
 }
 
+/* CABS Nedir bölümü */
 .cabs-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 40px;
-    text-align: left; 
+    text-align: left;
     max-width: 1200px;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .cabs-text {
     flex: 1;
+    min-width: 300px;
 }
 
 .cabs-text p {
@@ -232,8 +268,10 @@ p {
 .cabs-image img {
     max-width: 300px;
     height: auto;
+    border-radius: 10px;
 }
 
+/* İletişim bölümü */
 .contact-container {
     display: flex;
     flex-direction: row;
@@ -263,6 +301,12 @@ p {
     min-width: 300px;
 }
 
+.contact-form p {
+    /* Varsayılan paragraf renginden etkilenir (şu an #99ccff). 
+       İsterseniz burada farklı bir ton da kullanabilirsiniz. */
+    color: inherit; 
+}
+
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -273,6 +317,7 @@ p {
     margin-bottom: 5px;
     font-weight: bold;
     font-size: 16px;
+    color: #326789;
 }
 
 .contact-form input,
@@ -282,20 +327,22 @@ p {
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: #326789;
 }
 
 .contact-form button {
     width: 120px;
     padding: 10px;
     font-size: 16px;
-    background-color: #ffb6c1;
+    background-color: #e65c4f;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #ff9ca8;
+    background-color: #c24b42;
 }
+
