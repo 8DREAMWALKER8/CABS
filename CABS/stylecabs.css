@@ -1,16 +1,28 @@
+/* Renk Paleti
+   - #326789 (Koyu Mavi)
+   - #78A6C8 (Açık Mavi)
+   - #e9eef2 (Açık Gri / Neredeyse Beyaz)
+   - #e65c4f (Kırmızımsı Turuncu)
+   - #c24b42 (Hover rengi)
+*/
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  
+  /* Ortalamak için flex kullanımı */
   display: flex;
   justify-content: center;
   align-items: center;
+  
   height: 100vh;
-  background-color: #f4e1d2;
+  background-color: #e9eef2; /* Arka planı açık gri */
+  color: #78A6C8;            /* Metin rengini koyu mavi */
 }
 
 .container {
-  background: #fff;
+  background: #fff;          /* Form kutusu arka planını beyaz tuttuk */
   padding: 20px 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -22,6 +34,7 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
+  color: #326789;            /* Başlık rengini koyu mavi */
 }
 
 .input-box {
@@ -32,27 +45,38 @@ body {
   font-size: 14px;
   margin-bottom: 5px;
   display: block;
+  color: #326789;            /* Label / detay rengini koyu mavi */
 }
 
 .input-box input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  
+  /* Açık mavi kenarlık ve hafif gri arka plan ile uyum sağlıyoruz */
+  border: 1px solid #78A6C8;
+  background-color: #e9eef2; 
+  color: #326789;
+  
   border-radius: 5px;
   font-size: 14px;
 }
 
+/* Buton Stili */
 .button input {
   width: 100%;
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background: #ce8ca5;
+  
+  /* Kırmızımsı turuncu ana renk */
+  background: #e65c4f;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
+/* Hover durumunda daha koyu turuncu-kırmızı */
 .button input:hover {
-  background: #ff7f9f;
+  background: #c24b42;
 }
