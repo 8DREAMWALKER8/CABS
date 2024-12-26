@@ -1,3 +1,12 @@
+/* Renk Paleti
+   - #326789 (Koyu Mavi)
+   - #78A6C8 (Açık Mavi)
+   - #e9eef2 (Açık Gri / Neredeyse beyaz)
+   - #e65c4f (Kırmızımsı Turuncu)
+   - #c24b42 (Buton hover rengi)
+*/
+
+/* GENEL AYARLAR */
 body {
   margin: 0;
   padding: 0;
@@ -5,47 +14,53 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f4e1d2; 
+  background: #e9eef2; /* Arka planı önceki paletteki açık griye çektik */
   font-family: Arial, sans-serif;
-  color: #333;
+  color: #326789;      /* Genel metin rengini koyu mavi yaptık */
 }
 
 .wrapper {
   width: 350px;
   padding: 20px;
-  background: #fff; 
+  background: #fff; /* Form kutusu zemin rengini beyaz tutalım */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
+/* BAŞLIK */
 .title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
-  color: #333;
+  color: #326789; /* Başlık rengini koyu mavi */
 }
 
+/* INPUT VE LABEL */
 .field {
   position: relative;
   margin-bottom: 20px;
 }
 
+/* Input arkaplanı ve kenarlığını açık mavi/gri karışımı yapabilirsiniz */
 .field input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #78A6C8; /* Açık mavi tonuyla kenarlık */
   border-radius: 4px;
   outline: none;
   font-family: Arial, sans-serif;
+  background-color: #e9eef2; /* İsteğe bağlı: input arkaplanını çok açık gri yapabilirsiniz */
+  color: #326789;            /* Yazı rengi koyu mavi */
 }
 
+/* Float label */
 .field label {
   position: absolute;
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  color: #888;
+  color: #78A6C8;     /* Label yazı rengi: açık mavi */
   pointer-events: none;
   transition: 0.3s;
 }
@@ -55,9 +70,10 @@ body {
   top: 0;
   left: 5px;
   font-size: 12px;
-  color: #333;
+  color: #326789; /* Odaklandığında label rengini koyu mavi yapalım */
 }
 
+/* İÇERİK (Checkbox, Şifre linki vb.) */
 .content {
   display: flex;
   justify-content: space-between;
@@ -74,8 +90,9 @@ body {
   margin-right: 5px;
 }
 
+/* Şifre hatırlatma linki vs. */
 .pass-link a {
-  color: #333;
+  color: #326789;
   text-decoration: none;
   font-size: 14px;
 }
@@ -84,9 +101,10 @@ body {
   text-decoration: underline;
 }
 
+/* BUTON */
 .field input[type="submit"] {
-  background: #ffb6c1;
-  color: #fff;
+  background: #e65c4f; /* Kırmızımsı turuncu */
+  color: #ffffff;
   border: none;
   cursor: pointer;
   font-weight: bold;
@@ -94,16 +112,17 @@ body {
 }
 
 .field input[type="submit"]:hover {
-  background: #ff9ca8;
+  background: #c24b42; /* Hover rengi */
 }
 
+/* KAYIT OL LİNKİ */
 .signup-link {
   text-align: center;
   font-size: 14px;
 }
 
 .signup-link a {
-  color: #ff7f9f;
+  color: #e65c4f;    /* Kırmızımsı turuncu */
   text-decoration: none;
   font-weight: bold;
 }
